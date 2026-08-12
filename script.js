@@ -1472,7 +1472,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 openContextMenu(e, p.id);
             });
 
-            card.addEventListener('dblclick', () => {
+            card.addEventListener('click', () => {
                 openCadastroPage(p.id);
             });
 
@@ -2379,6 +2379,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     openContextMenu(e, p.id);
                 });
             }
+
+            tr.style.cursor = 'pointer';
+            tr.addEventListener('click', () => {
+                openCadastroPage(p.id);
+            });
 
             tbody.appendChild(tr);
         });
